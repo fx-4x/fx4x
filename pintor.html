@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pintor - f(x)=4x</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pintor.css">
+  <link rel="stylesheet" href="index_var.css">
+</head>
+
+<body>
+
+
+  <section id="frase">
+    <div id="frase1" class="text">
+      <p>I close my eyes, and this<br>image floats beside me.</p>
+    </div>
+  </section>
+
+
+ <audio preload="auto" id="brush">
+  <source src="sons/brush.mp3">
+</audio>
+
+<audio preload="auto" id="cam">
+  <source src="sons/camera.mp3">
+</audio>
+
+  <header>
+    <button class="menu" onclick="w3_open()"></button>
+    <a href="indexobjeto.html"><img src="imagens/titulo.png"></a>
+    <p class="subti">curvas e contra-curvas</p>
+  </header>
+
+
+  <div class="sidebar" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="fecharM"><img class="Mativo" src="imagens/menuativo.png"></button>
+    <div id="linhaItems">
+      <img class="linhaM" src="imagens/linhaOdin.png">
+      <div id="items">
+        <a href="indexobjeto.html" class="item">Curvas e Contra-Curvas</a>
+        <a href="#" id="itemact">Odin</a>
+        <a href="escri.html" class="item">Nádia</a>
+        <a href="comp.html" class="item">Orfeu</a>
+        <a href="coreo.html" class="item">Zara</a>
+        <a href="index.html" class="item">Página Inicial</a>
+      </div>
+    </div>
+  </div>
+
+
+  <section id="parte1">
+
+    <div id="muitasbolas">
+      <img id="muitasbolas1" src="imagens/bolas2.png" onmouseover="brush()">
+      <img id="muitasbolas2" src="imagens/bolas3.png">
+      <img id="muitasbolas3" src="imagens/bolas7.png" onmouseover="brush()">
+      <img id="muitasbolas4" src="imagens/bolas6.png" onmouseover="brush()">
+      <img id="muitasbolas5" src="imagens/bolas2.png">
+      <img id="muitasbolas6"src="imagens/bolas1.png">
+      <img id="muitasbolas7" src="imagens/bolas3.png" onmouseover="brush()">
+      <img id="muitasbolas8" src="imagens/bolas1.png">
+      <img id="muitasbolas9" src="imagens/bolas9.png" onmouseover="brush()">
+      <img id="muitasbolas10" src="imagens/bolas7.png">
+      <img id="muitasbolas11" src="imagens/bolas1.png" onmouseover="brush()">
+      <img id="muitasbolas12" src="imagens/bolas4.png">
+      <img id="muitasbolas13" src="imagens/bolas8.png" onmouseover="brush()">
+      <img id="muitasbolas14" src="imagens/bolas2.png">
+    </div>
+    
+    <div id="imagens">
+      <img class="img1" src="imagens/img1.jpg" width="244px">
+      <img class="img2" src="imagens/img2.jpg" width="244px">
+      <img class="img3" src="imagens/splash1.png" width="444px">
+    </div>
+
+    <div id="pintor1"><img src="imagens/pintor1.png"></div>
+    <div id="text1">
+      <p>Os meus dedos estão cheios de carvão. A minha bata está cheia de manchas acumuladas. Apenas a tela parece não
+        ter nada, como se nada lhe pertencesse.</p>
+    </div>
+  </section>
+
+  <section id="parte2">
+
+    <div id="muitasbolas">
+      <img id="muitasbolas21" src="imagens/bolas6.png"  onmouseover="brush()">
+      <img id="muitasbolas22" src="imagens/bolas9.png"  onmouseover="brush()">
+      <img id="muitasbolas23" src="imagens/azul.png">
+      <img id="muitasbolas24" src="imagens/bolas2.png">
+      <img id="muitasbolas25" src="imagens/bolas7.png"  onmouseover="brush()">
+      <img id="muitasbolas26"src="imagens/bolas8.png" onmouseover="brush()">
+      
+    </div>
+
+    <div id="pintor2" class="pintor2"><img id="thumb" class="fade" src="imagens/pintor2.png">
+      <video id="tinta1" class="fade">
+        <source src="videos/painting1.mp4" type="video/mp4" preload width="242px" height="420px"></video>
+    </div>
+    <div id="text2">
+      <p>Para mim pintar já foi mais fácil. A imaginação já não me surge, as telas já não têm vida. Eu já não lhes dou
+        vida.</p>
+    </div>
+    <div id="pintor3">
+      <div class="pintor3"></div>
+    </div>
+  </section>
+
+  <section id="parte3">
+
+    <div id="muitasbolas">
+      <img id="muitasbolas31" src="imagens/amarelo.png">
+      <img id="muitasbolas32" src="imagens/rosa.png">
+      <img id="muitasbolas33" src="imagens/bolas7.png" onmouseover="brush()">
+      <img id="muitasbolas34" src="imagens/azul.png">
+      <img id="muitasbolas35" src="imagens/rosa.png">
+      <img id="muitasbolas36"src="imagens/amarelo.png">
+      <img id="muitasbolas37"src="imagens/azul.png">
+      <img id="muitasbolas38"src="imagens/rosa.png">
+      
+    </div>
+
+    <div id="text3">
+      <p>Dedos na tinta, depois na tela. Repito. Repito.
+        Mas não acerto.</p>
+    </div>
+    <div  class="pintor4"><img id="thumb" class="fade" src="imagens/pintor4.png">
+      <video id="tinta2" class="fade">
+        <source src="videos/painting2.mp4" type="video/mp4" preload></video>
+    </div>
+  </section>
+
+  <section id="parte4">
+    <div class="fotos1">
+      <div id="pintor5" class="pintor5"></div>
+      <div id="pintor6" class="pintor6"></div>
+    </div>
+
+    <div class="fotos1">
+      <div id="foto1">
+        <div id="text4">
+          <p>Abandono a tela. Quero explorar o meio
+            que me envolve no mundo real.</p>
+        </div>
+        <div id="pintor7" class="pintor7"></div>
+      </div>
+
+      <div>
+        <div id="pintor8" class="pintor8"></div>
+        <div id="text5">
+          <p>Dedos sem tinta, adeus à tela.</p>
+          <img class="vazia1" src="imagens/bolavazia.png" onmouseover="cam()">
+        </div>
+      </div>
+    </div>
+
+    <div id="fotos2" class="fotos1">
+      <div id="foto2">
+        <div><img src="imagens/pintor9.png"></div>
+        <div id="text6">
+          <p>Começo a pintar com o olhar. Deixo para trás
+            a tinta e a tela. Não há nada mais bonito que pintar com os olhos.</p>
+        </div>
+        <img id="vazia2" class="vazia2" src="imagens/bolavazia.png" onmouseover="cam()">
+      </div>
+      <div><img src="imagens/pintor10.png"></div>
+      <img class="img4" src="imagens/img4.jpg" width="336px">
+    </div>
+
+    <div class="fotos1">
+      <div class="pintor11">
+        <img id="vazia3" class="vazia3" src="imagens/bolavazia.png" onmouseover="cam()">
+        <img src="imagens/pintor11.png"></div>
+      <div class="pintor12"><img src="imagens/pintor12.png"></div>
+      <div class="pintor13"><img src="imagens/pintor13.png" height="420px"></div>
+
+      <img class="img5" src="imagens/img5.jpg" width="400px">
+      
+    </div>
+
+    <img id="vazia4" class="vazia4" src="imagens/bolavazia.png" onmouseover="cam()">
+
+    <img class="img6" src="imagens/img6.jpg" width="336px">
+
+  </section>
+
+  <footer>
+    <div>Beatriz Marques, Dalila Vidal, Joana Corvo, Maria Mestre
+      <br><br>
+      Design de Comunicação VI <br>
+      A Collision Between a Stream of Light and an Obstacle <br>
+      2019/2020</div>
+    <a class="instalink" href="">
+      <div id="insta">
+        <img src="imagens/insta.png">
+        <div class="at">@ficcao.fx.4x</div>
+      </div>
+    </a>
+  </footer>
+
+  <script src="menu.js" type="text/javascript"></script>
+  <script src="sons.js" type="text/javascript"></script>
+  <script src="pintor.js" type="text/javascript"></script>
+  <script src="pintor2.js" type="text/javascript"></script>
+
+</body>
+
+</html>

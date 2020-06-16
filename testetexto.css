@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+ svg{
+/*svg {*/
+    width: 70%;
+    height: 70%;
+    
+ stroke-dasharray: 800px;
+    stroke-dashoffset: 800px;     
+     animation-name: draw;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;  
+/*    Stay on the last frame*/
+    animation-iteration-count: 1; 
+/*    Run only once*/
+    animation-timing-function: linear;
+     }
+}
+ @keyframes draw {
+   from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 800;
+  }
+} 

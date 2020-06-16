@@ -1,0 +1,24 @@
+
+    .st0 {
+        width: 70%;
+        height: 70%;
+        stroke: #000;
+        stroke-width: 1;
+        stroke-dasharray: 800px;
+        stroke-dashoffset: 800px;
+        animation-name: draw;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+    }
+
+
+@keyframes draw {
+    from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset: 800;
+      }
+}

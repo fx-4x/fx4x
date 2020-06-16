@@ -1,0 +1,477 @@
+body {
+  margin:0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  font-size: 24px;
+}
+
+
+header {
+  margin: 20px 0px;
+  background-color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.menu {
+  background-image: url(imagens/menuvazio.png);
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  background-color: black;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+}
+
+.menu:hover {
+  background-image: url(imagens/menuhover.png);
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  background-color: black;
+  border: none;
+}
+
+.fecharM {
+  background-color: black;
+  border: none;
+}
+
+.Mativo {
+  width: 44px;
+  height: 44px;
+  background-size: cover;
+  background-color: black;
+  border: none;
+}
+
+#mySidebar {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 16px 0px 0px 12px;
+}
+
+#linhaItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.linhaM {
+  width: 80px;
+  height: 532px;
+  margin-left: 26px;
+  margin-top: -36px;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 92px;
+}
+
+.item {
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 16px;
+  margin-left: -44px;
+}
+
+.itemact {
+  text-decoration: none;
+  color: var(--roxo);
+  font-size: 50px;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+  
+.item:hover {
+  text-decoration: none;
+  color: var(--roxo);
+}
+
+
+#fraseinicio {
+  width: 80%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  margin: 20px 0px 72px 44px;
+}
+
+.text1 {
+width: 656px;
+/* font-size: 36px; */
+font-weight: 600;
+}
+
+#gabs {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-left: 100px;
+  transform: translateY(140px);
+}
+
+#tit1 {
+  margin-bottom: 0px;
+}
+
+.titulo {
+  font-size: 50px;
+}
+
+.frases {
+  font-family: 'Montserrat', sans-serif;
+  width: 476px;
+}
+
+.frase {
+  font-family: 'Montserrat', sans-serif;
+  width: 496px;
+}
+
+#esq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 36px;
+}
+
+#dto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 36px;
+  transform: translateY(160px);
+}
+
+
+.button {
+  display: block;
+  width: 556px;
+  height: 312px;
+  cursor: pointer;
+}
+
+
+
+#sil {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.bolasgab {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-80px,-240px);
+}
+
+
+#lim {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.tracos4comp {
+  position: absolute;
+  z-index: -1;
+  transform: translate(-36px,-40px);
+}
+
+.unr {
+font-size: 42px;
+font-weight: 700;
+margin-left: 40px;
+margin-bottom: 12px;
+}
+
+.unr1 {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: right;
+  margin-bottom: 12px;
+  }
+
+ .unr2 {
+   font-size: 42px;
+   font-weight: 700;
+   margin-left: 240px;
+   margin-top: 0px;
+   margin-bottom: -60px;
+  }    
+
+#mov {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.notgab {
+  position: absolute;
+  z-index: -1;
+  transform: translate(80px,40px);
+}
+
+
+
+
+
+/* PINTOR MODAL MODAL MODAL SAD FACE */
+
+
+.bg-modalPIN {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+.closeP {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.closeP:hover {
+  color: white;
+}
+
+
+
+/* ESCRITORA MODAL MODAL MODAL SAD FACE */
+
+
+.bg-modalESCR {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+.closeE {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.closeE:hover {
+  color: white;
+}
+
+/* COMPOSITOR MODAL MODAL MODAL SAD FACE */
+
+
+.bg-modalCOMP {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+
+/* ESCRITORA MODAL MODAL MODAL SAD FACE */
+
+
+.bg-modalCOREO {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  
+}
+
+.closeC {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.closeC:hover {
+  color: white;
+}
+
+
+
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 92%;
+  justify-content: start;
+  align-items: center;
+  padding: 36px;
+  box-sizing: border-box;
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--roxo);
+  top: 0;
+  left: 0;
+  overflow: scroll;
+}
+
+
+.close {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.close:hover {
+  color: white;
+}
+
+/* resize iframe code just for testing*/
+.video-wrapper {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  padding: 68% 0 0;
+  box-sizing: border-box;
+  margin-top: 0px;
+  
+}
+.video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+}
+
+#textovid {
+  width: 80%;
+  margin-top: -120px;
+}
+
+#textod {
+  font-family: 'Montserrat', sans-serif;
+  /* height: 100px;
+  overflow: scroll; */
+}
+
+
+
+
+
+
+
+footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 360px;
+  padding: 0px 40px 40px 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#insta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.at {
+  margin-left: 12px;
+}
+
+
+.instalink:link, :visited {
+color: white;
+text-decoration: none;
+}
+
+.instalink:hover {
+text-decoration: none;
+color: var(--roxo);
+}
+
+

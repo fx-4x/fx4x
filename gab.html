@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabinetes de Ficção - f(x)=4^x</title>
+
+
+  <link rel="stylesheet" href="gab.css">
+  <link rel="stylesheet" href="index_var.css">
+
+
+</head>
+
+<body>
+  <header>
+    <button class="menu" onclick="w3_open()"></button>
+    <a href="index.html"><img src="imagens/titulo.png"></a>
+  </header>
+
+  <div class="sidebar" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="fecharM"><img class="Mativo" src="imagens/menuativo.png"></button>
+    <div id="linhaItems">
+      <img class="linhaM" src="imagens/linhamenuG.png">
+      <div id="items">
+        <a href="index.html" class="item">Página Inicial</a>
+        <a href="indexobjeto.html" class="item">Curvas e Contra-Curvas</a>
+        <a href="#" class="item">Manual de Ficção</a>
+        <a href="#" class="itemact">Gabinetes de Ficção</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="fraseinicio">
+    <div class="text1">
+      <p> Vivo sempre no presente. O futuro, não o conheço. O passado, já o não tenho. Pesa-me um como a possibilidade de tudo, o outro como a realidade de nada. Não tenho esperanças nem saudades. Conhecendo o que tem sido a minha vida até hoje — tantas vezes e em tanto o contrário do que eu a desejara —, que posso presumir da minha vida de amanhã senão que será o que não presumo, o que não quero, o que me acontece de fora, até através da minha vontade? Nem tenho nada no meu passado que relembre com o desejo inútil de o repetir. Nunca fui senão um vestígio e um simulacro de mim. O meu passado é tudo quanto não consegui ser. Nem as sensações de momentos idos me são saudosas: o que se sente exige o momento; passado este, há um virar de página e a história continua, mas não o texto.</p>
+      <p><i>in Livro do Desassossego, por Bernardo Soares, Vol II. Fernando Pessoa</i></p>
+    </div>
+  </section>
+
+  <section id="gabs">
+    <div><img id="fundo" src="imagens/riscosgab.png"></div>
+    <div id="esq">
+      <div id="sil">
+        <img class="bolasgab" src="imagens/bolasgab.png">
+        <a id="buttonPIN" class="button"><img src="imagens/silgab.png"></a>
+        <p id="tit1" class="titulo">Silêncio</p>
+        <p class="frase">É feliz. Pinta para a alma e
+          para o mundo.</p>
+      </div>
+      <div id="lim">
+        <img class="tracos4comp" src="imagens/tracos4comp.png">
+        <a id="buttonCOMP" class="button" data-modal="bg-modalCOMP"><img src="imagens/limgab.png"></a>
+        <p id="tit1" class="titulo">Limit</p>
+        <p class="frases"><i>“I am one of those who will go on doing till all doings are at an end.”</i></p>
+      </div>
+    </div>
+
+
+    <div id="dto">
+      <div>
+        <div>
+          <p class="unr1">Superior.</p>
+          <p class="unr">Sereno.</p>
+        </div>
+        <a id="buttonESC" class="button"><img src="imagens/unrgab.png"></a>
+        <div>
+          <p class="unr2">Divino.</p>
+        </div>
+        <p id="tit1" class="titulo">Unravel</p>
+        <p class="frases"><i>"And all the time he is mumbling. Mumbling truth..."</i></p>
+      </div>
+      <div id="mov">
+        <img class="notgab" src="imagens/notgab.png">
+        <a id="buttonCOREO" class="button"><img src="imagens/movgab.png"></a>
+        <p id="tit1" class="titulo">Movimento</p>
+        <p class="frases">O eco constante no interior.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div>Beatriz Marques, Dalila Vidal, Joana Corvo, Maria Mestre
+      <br><br>
+      Design de Comunicação VI <br>
+      A Collision Between a Stream of Light and an Obstacle <br>
+      2019/2020</div>
+    <a class="instalink" href="">
+      <div id="insta">
+        <img src="imagens/insta.png">
+        <div class="at">@ficcao.fx.4x</div>
+      </div>
+    </a>
+  </footer>
+
+
+
+  <!-- PINTOR -->
+  <div class="bg-modalPIN">
+    <div class="modal-content">
+      <div class="closeP">X</div>
+      <div class="video-wrapper">
+        <!-- <iframe class="video" src="videos/BeatrizM.mp4" frameborder="0" autoplay="false" autostart="false"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video class="video" controls>
+            <source src="videos/BeatrizM.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div id="textovid">
+        <p id="tit1" class="titulo">Silêncio</p>
+        <p id="textod">“Silêncio” é o nome do Gabinete de Ficção relativo ao pintor, personagem
+          integrante da ficção. O pintor acredita cada vez mais numa vida sem
+          esperança. Não fala para ninguém e apenas observa o mundo à sua
+          volta, como forma de dedicação ao seu voto de silêncio. Há, em todo o
+          ambiente, uma forte ligação à Natureza e ao seu movimento e formas
+          perfeitas, que servem de inspiração à personagem. A sua crise de fé não
+          diz respeito a Deus, mas sim à Humanidade. <br><br>
+          Abraça o bloqueio artítico, acreditando numa oportunidade para viver em
+          calma e plenitude e em comunhão com Deus. É feliz. Pinta para a alma e
+          para o mundo.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ESCRITORA -->
+  <div class="bg-modalESCR">
+    <div class="modal-content">
+      <div class="closeE">X</div>
+      <div class="video-wrapper">
+        <!-- <iframe class="video" src="videos/JoanaCorvo.mp4" frameborder="0" autoplay="false" autostart="false"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video class="video" controls>
+            <source src="videos/JoanaCorvo.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div id="textovid">
+        <p id="tit1" class="titulo">Unravel</p>
+        <p id="textod">As palavras são difíceis de escrever, de pensar. É com elas que criamos o que nos rodeia e que o que nos rodeia cria a nós. Pensamentos que bloqueiam as ideias, outros matam-as antes de sequer serem imaginadas. <br>
+          <br>Em <i>unravel</i> acompanhamos o processo de criação de pensamentos de uma escritora. Estes envolvem mais do que palavras, são sons, são luzes, cores. Por vezes, os piores bloqueios criativos são quebrados a experimentar outras formas de arte e a confrontar os nossos medos. Tendo como base o discurso do filme <i>Dead Poets Society</i> onde a personagem faz exatamente isso, fecha os olhos e diz de forma sentida o que lhe vai na alma, dando o "grito" (<i>yawp</i> em inglês).
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPOSITOR -->
+  <div class="bg-modalCOMP">
+    <div class="modal-content">
+      <div class="close">X</div>
+      <div class="video-wrapper">
+        <!-- <iframe class="video" src="videos/DalilaOliveira.mp4" frameborder="0" autoplay="false" autostart="false"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video class="video" controls>
+            <source src="videos/DalilaOliveira.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div id="textovid">
+        <p id="tit1" class="titulo">Limit</p>
+        <p id="textod">A crise artística é uma das temáticas fundamentais na ficção f(x)=4^x. Os quatro artistas
+          encontram-se perdidos nas suas próprias mentes, perdendo o controlo
+          e a noção da realidade.<br><br>
+          O gabinete de ficção Limit, cria uma extensão da ficção f(x)=4^x em que o
+          compositor não consegue suportar as suas próprias expectativas. À procura
+          da perfeição, ele perde-se na sua crise artística e entra numa crise existencial
+          fatal. O seu passado é definido por melodias fantásticas. Ele relembra-se das
+          luzes que lhe mostravam o caminho como criança, e sempre o inspiraram na
+          criação de novas melodias, mas isso torna-se cada vez mais distante. O seu
+          bloqueio criativo controla e define-o.
+          <br><br>Orientado nas palavras de Wolfgang Amadeus Mozart: <i>“I am one of those
+            who will go on doing till all doings are at an end”,</i> o compositor chegou
+          aos seus limites onde acaba por encontrar o seu, e o fim das suas obras.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- COREOGRAFA -->
+  <div class="bg-modalCOREO">
+    <div class="modal-content">
+      <div class="closeC">X</div>
+      <div class="video-wrapper">
+        <!-- <iframe class="video" src="videos/DalilaOliveira.mp4" frameborder="0" autoplay="false" autostart="false"
+          allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <video class="video" controls>
+            <source src="videos/MariaJoãoMestre.mp4" type="video/mp4">
+          </video>
+      </div>
+      <div id="textovid">
+        <p id="tit1" class="titulo">Movimento</p>
+        <p id="textod">O gabinete de ficção Movimento pretende vir dar vida à Coreógrafa
+          da ficção f(x)=4^x
+
+          . Através da representação do seu ambiente natural
+          podemos visualizar a forma exigente e metódica como realiza o seu
+          trabalho, assim como o esforço e sacrifício iminente a este. Com
+          uma indubitável dedicação pede aos aprendizes que façam com rigor
+          aquilo que mesma ela realiza. A imaginação esta-lhe constantemente
+          presente, no entanto esta pode não lhe bastar. Os ensaios com erros,
+          hesitações e repetições estão também eles constantemente presentes.
+          A música ambiente, triste e nostálgica, acompanha todo o gabinete,
+          deixando assim antever aquilo que se encontra por detrás das imagens
+          constantemente em movimento. Deste modo o ambiente sonoro vem
+          funcionar como um presságio de que aquilo que aqui vemos poderá
+          não caminhar para bom fim. Fim esse que fica em aberto, Movimento
+          não nos dá qualquer tipo de resposta sobre o mesmo, bem pelo
+          contrario, deixa no ar perguntas que apenas poderão ser respondidas
+          no desenvolvimento da ficção f(x)=4^x
+          .<br><br>
+          Em suma, Movimento pretende deixar a mensagem que por vezes uma
+          crise artística pode não se expressar sequer a nível fisico, uma vez
+          que a Coreógrafa se encontra bem, mas que a nível mental é intensa,
+          ecoando constantemente no interior de quem a vive.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="menu.js" type="text/javascript"></script>
+  <script src="gab.js" type="text/javascript"></script>
+</body>
+
+</html>

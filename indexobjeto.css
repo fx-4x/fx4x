@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    background-color: black;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cormorant', serif;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+/*    z-index: 2;*/
+}
+
+
+header {
+    margin: 20px 0px;
+    background-color: black;
+    width: 100%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+  }
+  
+  .subti {
+    margin-top: -2px;
+  font-size: 24px;
+
+}
+
+  .menu {
+    background-image: url(imagens/menuvazio.png);
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    background-color: black;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+  }
+  
+  .menu:hover {
+    background-image: url(imagens/menuhover.png);
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    background-color: black;
+    border: none;
+  }
+  
+  .fecharM {
+    background-color: black;
+    border: none;
+  }
+  
+  .Mativo {
+    width: 44px;
+    height: 44px;
+    background-size: cover;
+    background-color: black;
+    border: none;
+  }
+  
+  #mySidebar {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 16px 0px 0px 12px;
+    z-index: 2;
+  }
+  
+  #linhaItems {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .linhaM {
+    width: 80px;
+    height: 532px;
+    margin-left: 26px;
+    margin-top: -32px;
+  }
+  
+  #items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 92px;
+  }
+  
+  .item {
+    text-decoration: none;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 16px;
+    margin-left: -44px;
+  }
+  
+  #itemact {
+    text-decoration: none;
+    color: var(--roxo);
+    font-size: 50px;
+    margin-bottom: 16px;
+    margin-left: 8px;
+  }
+    
+  .item:hover {
+    text-decoration: none;
+    color: var(--roxo);
+  }
+
+
+  
+
+
+  #frase {
+    position: fixed;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: frase 4s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@keyframes frase {
+    from {
+        top: 0px;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    to {
+        top: 0px;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+#frase1 {
+    width: 1100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* color: var(--roxo); */
+    font-size: 48px;
+    text-transform: none;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    
+}
+
+
+
+#intro {
+    width: 80%;
+    display: flex;
+    margin: 0px 0px 60px 0px;
+    position: relative;
+}
+
+.intro {
+    width: 420px;
+}
+
+
+#nots {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+#notsat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#ama {
+  transform: translate(-86px, -20px);
+}
+
+#trac {
+  transform: translate(-78px, 252px);
+}
+
+#botrac {
+  transform: translate(-36px, 68px);
+}
+
+#menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 144px;
+    margin-bottom: 100px;
+}
+
+#ligacoes {
+    background-image: url(imagens/ligacoes.png);
+    background-size: cover;
+    width: 906px;
+    height: 948px;
+    position: relative;
+    display: flex;
+}
+
+/* .blur {
+    filter: blur(4px);
+} */
+.pintor {
+    position: absolute;
+    color: var(--roxo);
+    transform: translateX(80px);
+    height: 200px;
+}
+
+.pintorX {
+    transform: translate(240px,-480px);
+}
+
+.pintor:link, .pintor:visited {
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+.pintor:hover {
+    color: white;
+}
+
+.escri {
+    position: absolute;
+    color: var(--roxo);
+    font-size: 144px;
+    transform: translate(586px,144px);
+    height: 200px;
+}
+
+.escriX {
+    transform: translate(160px,-268px);
+}
+
+.escri:link, .escri:visited {
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+.escri:hover {
+    color: white;
+}
+
+
+.comp {
+    color: var(--roxo);
+    position: absolute;
+    font-size: 144px;
+    transform: translate(164px,560px);
+    height: 200px;
+}
+
+.compX {
+    transform: translate(-48px,-460px);
+}
+
+.comp:link, .comp:visited {
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+.comp:hover {
+    color: white;
+}
+
+.coreo {
+    color: var(--roxo);
+    position: absolute;
+    font-size: 144px;
+    transform: translate(700px,700px);
+    height: 200px;
+}
+
+.coreoX {
+    transform: translate(-48px,-340px);
+}
+
+.coreo:link, .coreo:visited {
+    color: var(--roxo);
+    text-decoration: none;
+}
+
+.coreo:hover {
+    color: white;
+}
+
+
+
+
+/* NOTAÇOES */
+
+#notlig {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: -1;
+}
+
+#bp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#bols {
+  transform: translate(-100px, -200px);
+}
+
+#perfei {
+  font-size: 24px;
+  font-weight: 400;
+  width: 366px;
+  margin-left: 68px;
+}
+
+#not1 {
+  transform: translate(-20px, -100px);
+}
+
+#not2 {
+  transform: translate(-36px, -20px);
+}
+
+
+
+
+
+footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 200px;
+  margin-top: 0px;
+  padding: 0px 40px 40px 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#insta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.at {
+  margin-left: 12px;
+}
+
+
+.instalink:link,
+:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.instalink:hover {
+  text-decoration: none;
+  color: var(--roxo);
+}
