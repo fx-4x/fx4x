@@ -23,7 +23,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 1);
-  z-index: 2;
+  z-index: 6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,15 +35,15 @@ body {
 
 @keyframes frase {
   from {
-      top: 0px;
-      visibility: visible;
-      opacity: 1;
+    top: 0px;
+    visibility: visible;
+    opacity: 1;
   }
 
   to {
-      top: 0px;
-      opacity: 0;
-      visibility: hidden;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -63,23 +63,25 @@ body {
 
 
 
-header {
-  margin: 20px 0px;
+#head {
+  padding: 20px 0px;
+  /* box-sizing: border-box; */
   background-color: black;
   width: 100%;
-  height: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  position: relative;
-  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: top 0.8s;
 }
 
 .subti {
-  margin-top: -2px;
-  color: white;
+  margin-top: -8px;
+  margin-bottom: -8px;
   font-size: 24px;
 }
 
@@ -94,6 +96,7 @@ header {
   top: 0;
   left: 0;
   margin-left: 20px;
+  margin-top: 20px;
 }
 
 .menu:hover {
@@ -119,14 +122,15 @@ header {
 }
 
 #mySidebar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0);
   display: flex;
   top: 0;
   left: 0;
-  position: absolute;
-  margin: 16px 0px 0px 12px;
-  overflow: hidden;
-  z-index: 1;
+  position: fixed;
+  padding: 16px 0px 0px 12px;
+  width: 500px;
+  height: 100vh;
+  z-index: 4;
 }
 
 #linhaItems {
@@ -136,21 +140,22 @@ header {
 
 .linhaM {
   width: 80px;
-  height: 532px;
+  height: 407px;
   margin-left: 26px;
-  margin-top: -12px;
+  margin-top: -6px;
 }
 
 #items {
   display: flex;
   flex-direction: column;
-  margin-top: 62px;
+  margin-top: 64px;
 }
 
 .item {
   text-decoration: none;
   color: white;
-  font-size: 50px;
+  font-size: 32px;
+  font-weight: 600;
   margin-bottom: 16px;
   margin-left: -44px;
 }
@@ -158,11 +163,11 @@ header {
 #itemact {
   text-decoration: none;
   color: var(--roxo);
-  font-size: 50px;
+  font-size: 32px;
+  font-weight: 600;
   margin-bottom: 16px;
   margin-left: 8px;
 }
-
 .item:hover {
   text-decoration: none;
   color: var(--roxo);
@@ -170,8 +175,10 @@ header {
 
 
 
+
+
 #parte1 {
-  margin-top: 100px;
+  margin-top: 300px;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -206,7 +213,6 @@ header {
 
 #muitasbolas2 {
   transform: translate(-64px, 440px);
-  cursor: pointer;
 }
 
 #muitasbolas3 {
@@ -243,11 +249,10 @@ header {
 
 #muitasbolas8 {
   transform: translate(-40px, 80px);
-  cursor: pointer;
 }
 
 #muitasbolas9 {
-  transform: translate(80px, 280px);
+  transform: translate(80px, 480px);
 }
 
 #muitasbolas9:hover {
@@ -256,11 +261,11 @@ header {
 
 
 #muitasbolas10 {
-  transform: translate(100px, 240px);
+  transform: translate(100px, 440px);
 }
 
 #muitasbolas11 {
-  transform: translate(100px, 440px);
+  transform: translate(100px, 40px);
 }
 
 #muitasbolas11:hover {
@@ -269,7 +274,6 @@ header {
 
 #muitasbolas12 {
   transform: translate(40px, -120px);
-  cursor: pointer;
 }
 
 #muitasbolas13 {
@@ -281,37 +285,16 @@ header {
 }
 
 #muitasbolas14 {
-  transform: translate(100px, 80px);
+  transform: translate(10px, 280px);
 }
 
 
-#imagens {
-  width: 100%;
-  position: absolute;
-  display: flex;
-  align-items: flex-start;
-}
-
-.img1 {
-  transform: translate(80px, 300px);
-  display: none;
-}
-
-.img2 {
-  transform: translate(640px, -80px);
-  display: none;
-}
-
-.img3 {
-  transform: translate(380px, 40px);
-  display: none;
-}
 
 
 
 
 #parte2 {
-  margin-top: 20px;
+  margin-top: 600px;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -321,43 +304,45 @@ header {
 
 
 #muitasbolas21 {
-  transform: translate(-84px, 600px);
+  transform: translate(-84px, 768px);
+  transition: 0.2s;
 }
 
 #muitasbolas21:hover {
-  transform: translate(-44px, 640px);
+  opacity: 0;
 }
 
 #muitasbolas22 {
-  transform: translate(0px, 140px);
+  transform: translate(0px, -86px);
 }
 
 #muitasbolas22:hover {
-  transform: translate(20px, 160px);
+  transform: translate(20px, -44px);
 }
 
 #muitasbolas23 {
-  transform: translate(40px, 500px);
+  transform: translate(40px, 724px);
 }
 
 #muitasbolas24 {
-  transform: translate(240px, 460px);
+  transform: translate(240px, 560px);
 }
 
 #muitasbolas25 {
-  transform: translate(280px, 60px);
+  transform: translate(280px, -260px);
 }
 
 #muitasbolas25:hover {
-  transform: translate(260px, 98px);
+  transform: translate(272px, -198px);
 }
 
 #muitasbolas26 {
-  transform: translate(362px, 540px);
+  transform: translate(362px, 640px);
+  transition: 0.2s;
 }
 
 #muitasbolas26:hover {
-  transform: translate(342px, 580px);
+  opacity: 0;
 }
 
 
@@ -372,6 +357,7 @@ header {
 
 #pintor2 {
   margin-top: 240px;
+  margin-right: 28px;
 }
 
 
@@ -412,7 +398,7 @@ header {
 
 #tinta1 {
   width: 120%;
-  height:120%;
+  height: 120%;
   /*     position: absolute; */
   opacity: 0;
   position: absolute;
@@ -451,7 +437,7 @@ header {
 
 
 #parte3 {
-  margin-top: -40px;
+  margin-top: 400px;
   width: 80%;
   display: flex;
   justify-content: space-between;
@@ -461,32 +447,53 @@ header {
 
 
 #muitasbolas31 {
-  transform: translate(20px, 1200px);
+  transform: translate(20px, 1800px);
+  opacity: 0.1;
 }
+
+
 
 #muitasbolas32 {
   transform: translate(40px, 580px);
+  transition: 0.2s;
 }
 
+#muitasbolas32:hover {
+  opacity: 0;
+}
+
+
 #muitasbolas33 {
-  transform: translate(300px, 340px);
+  transform: translate(300px, 368px);
+  transition: 0.2s;
 }
 
 #muitasbolas33:hover {
-  transform: translate(324px, 352px);
+  opacity: 0;
 }
 
 #muitasbolas34 {
-  transform: translate(340px, 1100px);
+  transform: translate(340px, 1600px);
+  transition: 0.2s;
+}
+
+#muitasbolas34:hover {
+  opacity: 0;
 }
 
 #muitasbolas35 {
-  transform: translate(320px, 680px);
+  transform: translate(320px, 1280px);
+  opacity: 0.3;
 }
 
+
+
+
 #muitasbolas36 {
-  transform: translate(356px, 620px);
+  transform: translate(356px, 1220px);
+  opacity: 0.6;
 }
+
 
 #muitasbolas37 {
   transform: translate(500px, 440px);
@@ -494,7 +501,13 @@ header {
 
 #muitasbolas38 {
   transform: translate(700px, 980px);
+  transition: 0.2s;
 }
+
+#muitasbolas38:hover {
+  opacity: 0;
+}
+
 
 .vazia1 {
   transform: translate(60px, -20px);
@@ -528,36 +541,24 @@ header {
   display: flex;
   width: 286px;
   height: 496px;
-  position: relative;
-  /*     background-image: url(imagens/coreo4.png);
+  background-image: url(imagens/pintor4.png);
   background-size: cover;
-  */
-}
-
-
-.pintor4:hover #thumb {
-  opacity: 0;
-}
-
-.pintor4:hover #tinta2 {
   opacity: 1;
+  transform: translateY(-116px);
+  transition: 0.6s;
 }
 
 
-#tinta2 {
-  width: 150%;
-  height: 150%;
-  /*     position: absolute; */
+.pintor4:hover {
   opacity: 0;
-  position: absolute;
-  transform: rotate(90deg) translate(-140px, 80px);
 }
+
 
 
 
 
 #parte4 {
-  margin-top: 40px;
+  margin-top: 280px;
   width: 80%;
   margin-bottom: 100px;
   position: relative;
@@ -567,6 +568,7 @@ header {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: 300px;
 }
 
 #pintor5 {
@@ -598,12 +600,7 @@ header {
   height: 336px;
 }
 
-.pintor6:hover {
-  background-image: url(imagens/pintor6c.png);
-  background-size: cover;
-  width: 280px;
-  height: 336px;
-}
+
 
 #text4 {
   width: 384px;
@@ -621,12 +618,6 @@ header {
   height: 356px;
 }
 
-.pintor7:hover {
-  background-image: url(imagens/pintor7c.png);
-  background-size: cover;
-  width: 365px;
-  height: 356px;
-}
 
 
 .pintor8 {
@@ -656,8 +647,27 @@ header {
 #fotos2 {
   display: flex;
   align-items: center;
-  margin-top: 96px;
+  margin-top: 296px;
   position: relative;
+}
+
+
+
+
+.pintor110 {
+  margin-top: -244px;
+  background-image: url(imagens/pintor10.png);
+  background-size: cover;
+  width: 213px;
+  height: 303px;
+}
+
+.pintor110:hover {
+  margin-top: -244px;
+  background-image: url(imagens/pintor10c.png);
+  background-size: cover;
+  width: 213px;
+  height: 303px;
 }
 
 .pintor11 {
@@ -665,7 +675,7 @@ header {
 }
 
 .pintor13 {
-  margin-top: 472px;
+  margin-top: 672px;
 }
 
 
@@ -724,4 +734,156 @@ footer {
 .instalink:hover {
   text-decoration: none;
   color: var(--roxo);
+}
+
+
+
+
+
+footer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100px;
+  margin-top: 244px;
+  padding: 0px 40px 40px 40px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+#footinf {
+  display: flex;
+flex-direction: column;
+}
+
+#insta {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.at {
+  margin-left: 12px;
+}
+
+
+.instalink:link, :visited {
+color: white;
+text-decoration: none;
+}
+
+.instalink:hover {
+text-decoration: none;
+color: var(--roxo);
+}
+
+#infobtnt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#infobtn {
+  width: 36px;
+  height: 36px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-color: white;
+  border-width: 3px;
+  border-style: solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  border-radius: 6px;
+}
+
+#infobtntt {
+  margin-top: 36px;
+}
+
+.i {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+
+
+#buttoninfo {
+  cursor: pointer;
+}
+
+.buttoninfo:hover #infobtntt {
+  color: var(--roxo);
+}
+
+
+
+
+
+.bg-modal-info {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 6;
+}
+
+.modal-content {
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  display: flex;
+  width: 80%;
+  height: 92%;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+  box-sizing: border-box;
+  position: relative;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--roxo);
+  overflow: hidden;
+}
+
+
+
+.closeinfo {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--roxo);
+  cursor: pointer;
+}
+
+.closeinfo:hover {
+  color: white;
+}
+
+
+#editorial {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+}
+
+.edit {
+  font-size: 24px;
+  font-weight: 700;
 }

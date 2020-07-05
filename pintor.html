@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Pintor - f(x)=4x</title>
+  <title>Odin - f(x)=4^x 4^x > 0</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="pintor.css">
@@ -19,27 +19,28 @@
   </section>
 
 
- <audio preload="auto" id="brush">
-  <source src="sons/brush.mp3">
-</audio>
+  <audio preload="auto" id="brush">
+    <source src="sons/brush.mp3">
+  </audio>
 
-<audio preload="auto" id="cam">
-  <source src="sons/camera.mp3">
-</audio>
+  <audio preload="auto" id="cam">
+    <source src="sons/camera.mp3">
+  </audio>
 
-  <header>
+
+  <header id="head">
     <button class="menu" onclick="w3_open()"></button>
-    <a href="indexobjeto.html"><img src="imagens/titulo.png"></a>
-    <p class="subti">curvas e contra-curvas</p>
+    <a href="index.html"><img src="imagens/titulo.png"></a>
+    <p class="subti">4<sup>x</sup> > 0</p>
   </header>
 
 
   <div class="sidebar" style="display:none" id="mySidebar">
     <button onclick="w3_close()" class="fecharM"><img class="Mativo" src="imagens/menuativo.png"></button>
     <div id="linhaItems">
-      <img class="linhaM" src="imagens/linhaOdin.png">
+      <img class="linhaM" src="imagens/linhamenuOdin.png">
       <div id="items">
-        <a href="indexobjeto.html" class="item">Curvas e Contra-Curvas</a>
+        <a href="indexobjeto.html" class="item">4<sup>x</sup> > 0</a>
         <a href="#" id="itemact">Odin</a>
         <a href="escri.html" class="item">Nádia</a>
         <a href="comp.html" class="item">Orfeu</a>
@@ -58,7 +59,7 @@
       <img id="muitasbolas3" src="imagens/bolas7.png" onmouseover="brush()">
       <img id="muitasbolas4" src="imagens/bolas6.png" onmouseover="brush()">
       <img id="muitasbolas5" src="imagens/bolas2.png">
-      <img id="muitasbolas6"src="imagens/bolas1.png">
+      <img id="muitasbolas6" src="imagens/bolas1.png">
       <img id="muitasbolas7" src="imagens/bolas3.png" onmouseover="brush()">
       <img id="muitasbolas8" src="imagens/bolas1.png">
       <img id="muitasbolas9" src="imagens/bolas9.png" onmouseover="brush()">
@@ -68,12 +69,7 @@
       <img id="muitasbolas13" src="imagens/bolas8.png" onmouseover="brush()">
       <img id="muitasbolas14" src="imagens/bolas2.png">
     </div>
-    
-    <div id="imagens">
-      <img class="img1" src="imagens/img1.jpg" width="244px">
-      <img class="img2" src="imagens/img2.jpg" width="244px">
-      <img class="img3" src="imagens/splash1.png" width="444px">
-    </div>
+
 
     <div id="pintor1"><img src="imagens/pintor1.png"></div>
     <div id="text1">
@@ -85,18 +81,17 @@
   <section id="parte2">
 
     <div id="muitasbolas">
-      <img id="muitasbolas21" src="imagens/bolas6.png"  onmouseover="brush()">
-      <img id="muitasbolas22" src="imagens/bolas9.png"  onmouseover="brush()">
+      <img id="muitasbolas21" src="imagens/bolas6.png">
+      <img id="muitasbolas22" src="imagens/bolas9.png" onmouseover="brush()">
       <img id="muitasbolas23" src="imagens/azul.png">
       <img id="muitasbolas24" src="imagens/bolas2.png">
-      <img id="muitasbolas25" src="imagens/bolas7.png"  onmouseover="brush()">
-      <img id="muitasbolas26"src="imagens/bolas8.png" onmouseover="brush()">
-      
+      <img id="muitasbolas25" src="imagens/bolas7.png" onmouseover="brush()">
+      <img id="muitasbolas26" src="imagens/bolas8.png">
+
     </div>
 
     <div id="pintor2" class="pintor2"><img id="thumb" class="fade" src="imagens/pintor2.png">
-      <video id="tinta1" class="fade">
-        <source src="videos/painting1.mp4" type="video/mp4" preload width="242px" height="420px"></video>
+      <video id="tinta1" class="fade"></video>
     </div>
     <div id="text2">
       <p>Para mim pintar já foi mais fácil. A imaginação já não me surge, as telas já não têm vida. Eu já não lhes dou
@@ -112,23 +107,22 @@
     <div id="muitasbolas">
       <img id="muitasbolas31" src="imagens/amarelo.png">
       <img id="muitasbolas32" src="imagens/rosa.png">
-      <img id="muitasbolas33" src="imagens/bolas7.png" onmouseover="brush()">
+      <img id="muitasbolas33" src="imagens/bolas7.png">
       <img id="muitasbolas34" src="imagens/azul.png">
       <img id="muitasbolas35" src="imagens/rosa.png">
-      <img id="muitasbolas36"src="imagens/amarelo.png">
-      <img id="muitasbolas37"src="imagens/azul.png">
-      <img id="muitasbolas38"src="imagens/rosa.png">
-      
+      <img id="muitasbolas36" src="imagens/amarelo.png">
+      <img id="muitasbolas37" src="imagens/azul.png">
+      <img id="muitasbolas38" src="imagens/rosa.png">
+
     </div>
 
     <div id="text3">
       <p>Dedos na tinta, depois na tela. Repito. Repito.
         Mas não acerto.</p>
     </div>
-    <div  class="pintor4"><img id="thumb" class="fade" src="imagens/pintor4.png">
-      <video id="tinta2" class="fade">
-        <source src="videos/painting2.mp4" type="video/mp4" preload></video>
-    </div>
+    <div class="pintor4"></div>
+
+
   </section>
 
   <section id="parte4">
@@ -164,7 +158,7 @@
         </div>
         <img id="vazia2" class="vazia2" src="imagens/bolavazia.png" onmouseover="cam()">
       </div>
-      <div><img src="imagens/pintor10.png"></div>
+      <div class="pintor110"></div>
       <img class="img4" src="imagens/img4.jpg" width="336px">
     </div>
 
@@ -176,7 +170,7 @@
       <div class="pintor13"><img src="imagens/pintor13.png" height="420px"></div>
 
       <img class="img5" src="imagens/img5.jpg" width="400px">
-      
+
     </div>
 
     <img id="vazia4" class="vazia4" src="imagens/bolavazia.png" onmouseover="cam()">
@@ -185,21 +179,76 @@
 
   </section>
 
+  
   <footer>
-    <div>Beatriz Marques, Dalila Vidal, Joana Corvo, Maria Mestre
-      <br><br>
-      Design de Comunicação VI <br>
-      A Collision Between a Stream of Light and an Obstacle <br>
-      2019/2020</div>
-    <a class="instalink" href="">
-      <div id="insta">
-        <img src="imagens/insta.png">
-        <div class="at">@ficcao.fx.4x</div>
-      </div>
-    </a>
+    <div></div>
+    <div id="footinf">
+      <a class="instalink" href="https://www.instagram.com/ficcao.fx.4x/" target="_blank">
+        <div id="insta">
+          <img src="imagens/insta.png">
+          <div class="at">@ficcao.fx.4x</div>
+        </div>
+      </a>
+      <a id="buttoninfo" class="buttoninfo">
+        <div id="infobtnt">
+          <div id="infobtn">
+            <p class="i">i</p>
+          </div>
+          <p id="infobtntt" class="at">f(x)=4<sup>x</sup></p>
+        </div>
+      </a>
+    </div>
   </footer>
 
+  <div class="bg-modal-info">
+    <div class="modal-content">
+      <div class="closeinfo">X</div>
+      <div id="editorial">
+        <p class="edit"> f(x)=4<sup>x</sup></p> <br>
+        <i>Projeto desenvolvido no âmbito da Unidade Curricular de Design de Comunicação VI por:</i> <br>
+        Beatriz Marques
+        <br>
+        Dalila Oliveira
+        <br>
+        Joana Corvo
+        <br>
+        Maria Mestre
+        <br><br>
+        <i>Alunas do 3º ano da Licenciatura <br>de Design de Comunicação<br>
+          Faculdade de Belas-Artes<br>
+          Universidade de Lisboa<br><br>
+          Tipos de Letra<br> </i>
+        Cormorant<br>
+        Montserrat<br><br>
+        2020
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("head").style.top = "0";
+      } else {
+        document.getElementById("head").style.top = "-144px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
   <script src="menu.js" type="text/javascript"></script>
+  <script>
+    document.getElementById('buttoninfo').addEventListener('click', function () {
+      document.querySelector('.bg-modal-info').style.display = 'flex';
+    });
+
+    document.querySelector('.closeinfo').addEventListener('click', function () {
+      document.querySelector('.bg-modal-info').style.display = 'none';
+    });
+  </script>
   <script src="sons.js" type="text/javascript"></script>
   <script src="pintor.js" type="text/javascript"></script>
   <script src="pintor2.js" type="text/javascript"></script>

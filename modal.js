@@ -9,6 +9,14 @@ document.querySelector('.close').addEventListener('click',function(){
 
 
 
+document.getElementById('buttoninfo').addEventListener('click', function() {
+  document.querySelector('.bg-modal-info').style.display = 'flex';
+});
+
+document.querySelector('.closeinfo').addEventListener('click',function(){
+  document.querySelector('.bg-modal-info').style.display = 'none';
+});
+
 
 
 

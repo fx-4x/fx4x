@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Ficção - f(x)=4^x</title>
+
+
+  <link rel="stylesheet" href="man.css">
+  <link rel="stylesheet" href="index_var.css">
+
+
+</head>
+
+<body>
+  
+  <header id="head">
+    <button class="menu" onclick="w3_open()"></button>
+    <a href="index.html"><img src="imagens/titulo.png"></a>
+  </header>
+
+  <div class="sidebar" style="display:none" id="mySidebar">
+    <button onclick="w3_close()" class="fecharM"><img class="Mativo" src="imagens/menuativo.png"></button>
+    <div id="linhaItems">
+      <img class="linhaM" src="imagens/linhamenuOrfeu.png">
+      <div id="items">
+        <a href="index.html" class="item">Página Inicial</a>
+        <a href="indexobjeto.html" class="item">4<sup>x</sup> > 0</a>
+        <a href="gab.html" class="item">Gabinetes de Ficção</a>
+        <a href="#" id="itemact">Manual de Ficção</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="fraseinicio">
+    <div class="text1">
+      <p>“Adoramos a perfeição, porque a não podemos ter; <br>
+        repugná-la-íamos se a tivéssemos. 
+        O perfeito é o desumano porque o humano é imperfeito.
+        <br><br>
+        O ódio surdo ao paraíso — o desejo como o da pobre infeliz de [que] houvesse campo no céu. <br>
+        Sim, não são os êxtases do abstracto, nem as maravilhas do absoluto que podem encantar uma alma que sente: são os lares e as encostas dos montes, as ilhas verdes nos mares azuis, os caminhos através de árvores e as largas horas de repouso nas quintas ancestrais, ainda que as nunca tenhamos. <br>
+        Se não houver terra no céu mais vale não haver céu. <br>
+        Seja então tudo o nada e acabe o romance que não tinha enredo. <br>
+        <br>
+        Para poder obter a perfeição fora precisa uma frieza de fora do homem e não haveria então coração de homem com que amar a própria perfeição.
+        <br><br>
+        Pasmamos, adorando, da tensão para o perfeito dos grandes artistas. <br>
+        Amamos a sua aproximação do perfeito, porém o amamos porque é só aproximação.”
+        
+      </p>
+      <p><i>in Livro do Desassossego, por Bernardo Soares, Vol II. Fernando Pessoa</i></p>
+    </div>
+  </section>
+
+<section id="fasciculos">
+<div id="fundoman"> <img src="imagens/fundoman.png"></div>
+</section>
+
+<footer>
+  <div></div>
+  <div id="footinf">
+    <a class="instalink" href="https://www.instagram.com/ficcao.fx.4x/" target="_blank">
+      <div id="insta">
+        <img src="imagens/insta.png">
+        <div class="at">@ficcao.fx.4x</div>
+      </div>
+    </a>
+    <a id="buttoninfo" class="buttoninfo">
+      <div id="infobtnt">
+        <div id="infobtn">
+          <p class="i">i</p>
+        </div>
+        <p id="infobtntt" class="at">f(x)=4<sup>x</sup></p>
+      </div>
+    </a>
+  </div>
+</footer>
+
+<div class="bg-modal-info">
+  <div class="modal-content">
+    <div class="closeinfo">X</div>
+    <div id="editorial">
+     <p class="edit"> f(x)=4<sup>x</sup></p> <br>
+      <i>Projeto desenvolvido no âmbito da Unidade Curricular de Design de Comunicação VI por:</i> <br>
+      Beatriz Marques
+      <br>
+      Dalila Oliveira
+      <br>
+      Joana Corvo
+      <br>
+      Maria Mestre
+      <br><br>
+     <i>Alunas do 3º ano da Licenciatura <br>de Design de Comunicação<br>
+      Faculdade de Belas-Artes<br>
+      Universidade de Lisboa<br><br>
+      Tipos de Letra<br> </i>
+      Cormorant<br>
+      Montserrat<br><br>
+      2020
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("head").style.top = "0";
+    } else {
+      document.getElementById("head").style.top = "-124px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+
+<script src="menu.js" type="text/javascript"></script>
+<script>document.getElementById('buttoninfo').addEventListener('click', function() {
+  document.querySelector('.bg-modal-info').style.display = 'flex';
+});
+
+document.querySelector('.closeinfo').addEventListener('click',function(){
+  document.querySelector('.bg-modal-info').style.display = 'none';
+});</script>
+
+</body>
+
+</html>

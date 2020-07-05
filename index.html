@@ -16,7 +16,7 @@
 
 
 
-  <header>
+  <header id="head">
     <button class="menu" onclick="w3_open()"></button>
     <a href="index.html"><img src="imagens/titulo.png"></a>
   </header>
@@ -26,10 +26,11 @@
     <div id="linhaItems">
       <img class="linhaM" src="imagens/linhamenu.png">
       <div id="items">
-        <a href="#" class="itemact">Página Inicial</a>
-        <a href="indexobjeto.html" class="item">Curvas e Contra-Curvas</a>
-        <a href="#" class="item">Manual de Ficção</a>
+        <a href="#" id="itemact">Página Inicial</a>
+        <a href="indexobjeto.html" class="item">4<sup>x</sup> > 0</a>
         <a href="gab.html" class="item">Gabinetes de Ficção</a>
+        <a href="man.html" class="item">Manual de Ficção</a>
+        
       </div>
     </div>
   </div>
@@ -42,156 +43,216 @@
   </section>
 
   <section id="teaserCont">
-    <video class="fullVid" controls>
-      <source src="videos/Teaser3.mp4" type="video/mp4">
-      <source src="videos/Teaser3.ogv" type="video/ogv">
-      Your browser does not support the video tag.
-    </video>
+    <iframe id="fullvid" src="https://www.youtube.com/embed/DDDCLuJF9X0?rel=0" width="100%" height="800px" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
+  <div id="dfundo">
+    <div id="fundo"></div>
 
-  <div id="fundo"></div>
 
-
-  <section id="sobreSec">
-    <div id="sobre">
-      <div id="sobreText">
-        <div><img src="imagens/titulo.png"></div>
-        <p class="text2">A ficção f(x)=4^x vem dar vida e expressão ao que existe de mais puro no ser humano comum, mas,
-          especialmente, a todos aqueles que utilizam a criatividade como meio de criação. É, portanto, importante
-          salientar o facto da nossa imaginação conter falhas e a possibilidade da criatividade poder desaparecer ou
-          sofrer um bloqueio, fazendo o ser humano ter que lidar individualmente com tudo isso e com as suas
-          consequências. Representado através de quatro artistas (pintor, escritor, compositor e coreógrafo), assistimos
-          a diferentes processos de como estes lidam com a pressão exterior e pessoal.
-        </p>
+    <section id="sobreSec">
+      <div id="sobre">
+        <div id="sobreText">
+          <div><img src="imagens/titulo.png"></div>
+          <p class="text2">A nossa imaginação pode falhar; a criatividade pode desaparecer ou bloquear. Na ficção
+            f(x)=4<sup>x</sup>, quatro artistas – um pintor, um escritor, um compositor e um coreógrafo – confrontam-se
+            com as suas frustrações, enquanto assistimos aos diferentes modos como lidam com a pressão exterior e
+            pessoal durante o acto criativo.
+          </p>
+        </div>
+        <div id="bolas1">
+          <img src="imagens/bolas1.png" class="bol1">
+          <img src="imagens/bolas2.png" class="bol2">
+          <img src="imagens/bolas3.png" class="bol3">
+        </div>
+        <div id="not1">
+          <img src="imagens/not1.png" class="not1">
+          <img src="imagens/not2.png" class="not2">
+          <img src="imagens/risco1.png" class="not3">
+        </div>
       </div>
-      <div id="bolas1">
-        <img src="imagens/bolas1.png" class="bol1">
-        <img src="imagens/bolas2.png" class="bol2">
-        <img src="imagens/bolas3.png" class="bol3">
-      </div>
-      <div id="not1">
-        <img src="imagens/not1.png" class="not1">
-        <img src="imagens/not2.png" class="not2">
-        <img src="imagens/risco1.png" class="not3">
-      </div>
-    </div>
 
-  </section>
+    </section>
 
-  <section id="siteObj">
-    <div id="obj">
-      <a class="linkobj" href="indexobjeto.html">
-        <div id="objimg">
-          <img src="imagens/Gif_convite.gif" width="524px">
-          <div class="gifX">
+    <section id="siteObj">
+      <div id="perf">
+        <p class="perft">Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição
+          Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição
+          Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição Perfeição
+          Perfeição </p>
+      </div>
+      <div id="obj">
+        <a class="linkobj" href="indexobjeto.html">
+          <div id="objimg">
+            <img src="imagens/Gif_convite.gif" width="524px">
+            <div class="gifX">
+              <p>X</p>
+            </div>
+          </div>
+        </a>
+        <div>
+          <p id="tit1" class="titulo">4<sup>x</sup> > 0</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mangab">
+      <div id="not1112">
+        <img src="imagens/not11.png" class="not111">
+        <img src="imagens/not12.png" class="not112">
+      </div>
+      <div id="not2">
+        <img src="imagens/not4.png" class="not4">
+        <img src="imagens/not5.png" class="not5">
+        <img src="imagens/not6.png" class="not6">
+        <img src="imagens/graph2.png" class="not7">
+        <img src="imagens/assun.png" class="not27">
+      </div>
+
+      <div id="mg">
+        <div id="manual">
+
+          <div><a href="man.html"><img src="imagens/manpro.png"></a>
+            <p id="tit1" class="titulo">Manual de Produção</p>
+            <p class="textmont">Registo da construção da ficção.</p>
+          </div>
+
+          <img src="imagens/risco2.png" class="not9">
+        </div>
+
+        <div id="gab">
+          <img src="imagens/not7.png" class="not8">
+
+          <div><a href="gab.html"><img src="imagens/gabfic.png"></a>
+
+            <p id="tit1" class="titulo">Gabinetes de Ficção</p>
+            <p class="textmont">Momentos de reflexão dos artistas.</p>
+
+          </div>
+          <img src="imagens/not8.png" class="not88">
+          <img src="imagens/bolas3.png" class="bol33">
+          <img src="imagens/numeros1.png" class="num1">
+
+        </div>
+      </div>
+      <div id="bolas2">
+        <img src="imagens/bolas4.png" class="bol4">
+        <img src="imagens/bolas5.png" class="bol5">
+      </div>
+    </section>
+
+
+
+
+    <section id="filme">
+      <div id="img113">
+        <img src="imagens/not13.png" class="not113">
+        <img src="imagens/not9.png" class="not10">
+        <img src="imagens/bolas6.png" class="bol6">
+      </div>
+
+      <div id="exFilme">
+        <div id="XFilme">
+          <div class="esconderX">
             <p>X</p>
           </div>
+          <a id="button" class="button">
+            <img width="648px" src="imagens/8emeio.png">
+          </a>
         </div>
-      </a>
-      <div>
-        <p id="tit1" class="titulo">curvas e contra-curvas</p>
+        <div id="text3">
+          <p id="tit1" class="titulo">Excerto do filme</p>
+          <p class="textmont" id="filme8">Conjunto de cenas do filme 8 1/2 de Federico Fellini como inspiração para a
+            ficção.</p>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <section id="mangab">
-    <div id="not2">
-      <img src="imagens/not4.png" class="not4">
-      <img src="imagens/not5.png" class="not5">
-      <img src="imagens/not6.png" class="not6">
-      <img src="imagens/graph2.png" class="not7">
-    </div>
-
-    <div id="mg">
-      <div id="manual">
-
-        <div><a href=""><img src="imagens/manpro.png"></a>
-          <p id="tit1" class="titulo">Manual de Produção</p>
-          <p class="textmont">Registo da construção da ficção.</p>
+      <div id="img113">
+        <img src="imagens/not10.png" class="not11">
+        <img src="imagens/bolas7.png" class="bol7">
+        <img src="imagens/bolas8.png" class="bol8">
+      </div>
+      <div class="bg-modal">
+        <div class="modal-content">
+          <div class="close">X</div>
+          <div class="video-wrapper">
+            <iframe class="video" width="90%" height="80%" src="https://www.youtube.com/embed/MtY04hjIveE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <video class="video" controls>
+              <source src="videos/excertofilme.mp4" type="video/mp4">
+            </video> -->
+          </div>
         </div>
-
-        <img src="imagens/risco2.png" class="not9">
       </div>
 
-      <div id="gab">
-        <img src="imagens/not7.png" class="not8">
 
-        <div><a href="gab.html"><img src="imagens/gabfic.png"></a>
+    </section>
 
-          <p id="tit1" class="titulo">Gabinetes de Ficção</p>
-          <p class="textmont">Momentos de reflexão dos artistas.</p>
-
-        </div>
-        <img src="imagens/not8.png" class="not88">
-        <img src="imagens/bolas3.png" class="bol33">
-        <img src="imagens/numeros1.png" class="num1">
-
-      </div>
-    </div>
-    <div id="bolas2">
-      <img src="imagens/bolas4.png" class="bol4">
-      <img src="imagens/bolas5.png" class="bol5">
-    </div>
-  </section>
-
-
-  <section id="filme">
-
-
-    <img src="imagens/not9.png" class="not10">
-    <img src="imagens/bolas6.png" class="bol6">
-
-
-    <div id="exFilme">
-      <div id="XFilme">
-        <div class="esconderX">
-          <p>X</p>
-        </div>
-        <a id="button" class="button">
-          <img width="648px" src="imagens/8emeio.png">
+    <footer>
+      <div></div>
+      <div id="footinf">
+        <a class="instalink" href="https://www.instagram.com/ficcao.fx.4x/" target="_blank">
+          <div id="insta">
+            <img src="imagens/insta.png">
+            <div class="at">@ficcao.fx.4x</div>
+          </div>
+        </a>
+        <a id="buttoninfo" class="buttoninfo">
+          <div id="infobtnt">
+            <div id="infobtn">
+              <p class="i">i</p>
+            </div>
+            <p id="infobtntt" class="at">f(x)=4<sup>x</sup></p>
+          </div>
         </a>
       </div>
-      <div id="text3">
-        <p id="tit1" class="titulo">Excerto do filme</p>
-        <p class="textmont" id="filme8">Conjunto de cenas do filme 8 1/2 de Federico Fellini como inspiração para a ficção.</p>
-      </div>
-    </div>
+    </footer>
 
-    <img src="imagens/not10.png" class="not11">
-    <img src="imagens/bolas7.png" class="bol7">
-    <img src="imagens/bolas8.png" class="bol8">
-
-    <div class="bg-modal">
+    <div class="bg-modal-info">
       <div class="modal-content">
-        <div class="close">X</div>
-        <div class="video-wrapper">
-          <!-- <iframe class="video" src="videos/excertofilme.mp4" frameborder="0" autoplay="false" autostart="false"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-            <video class="video" controls>
-              <source src="videos/excertofilme.mp4" type="video/mp4">
-            </video>
+        <div class="closeinfo">X</div>
+        <div id="editorial">
+         <p class="edit"> f(x)=4<sup>x</sup></p> <br>
+          <i>Projeto desenvolvido no âmbito da Unidade Curricular de Design de Comunicação VI por:</i> <br>
+          Beatriz Marques
+          <br>
+          Dalila Oliveira
+          <br>
+          Joana Corvo
+          <br>
+          Maria Mestre
+          <br><br>
+         <i>Alunas do 3º ano da Licenciatura <br>de Design de Comunicação<br>
+          Faculdade de Belas-Artes<br>
+          Universidade de Lisboa<br><br>
+          Tipos de Letra<br> </i>
+          Cormorant<br>
+          Montserrat<br><br>
+          2020
+          
         </div>
       </div>
     </div>
+  
+
+  </div>
 
 
-  </section>
+  
 
-  <footer>
-    <div>Beatriz Marques, Dalila Vidal, Joana Corvo, Maria Mestre
-      <br><br>
-      Design de Comunicação VI <br>
-      A Collision Between a Stream of Light and an Obstacle <br>
-      2019/2020</div>
-    <a class="instalink" href="">
-      <div id="insta">
-        <img src="imagens/insta.png">
-        <div class="at">@ficcao.fx.4x</div>
-      </div>
-    </a>
-  </footer>
 
+
+
+  <script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("head").style.top = "0";
+      } else {
+        document.getElementById("head").style.top = "-124px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  </script>
 
   <script src="menu.js" type="text/javascript"></script>
   <script src="modal.js" type="text/javascript"></script>

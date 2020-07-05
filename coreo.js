@@ -14,9 +14,11 @@ function getRandomInt(min, max) {
 }
 
 var myImages12 = new Array();
+myImages12.push("imagens/co5.png");
+myImages12.push("imagens/co1.png");
+myImages12.push("imagens/co2.png");
+myImages12.push("imagens/co4.png");
 myImages12.push("imagens/coreo2.png");
-myImages12.push("imagens/coreot1.jpg");
-myImages12.push("imagens/coreot2.jpg");
 
 
 function pickimg1() {
@@ -35,8 +37,9 @@ myImages2.push("imagens/24x.png");
 
 var myImages22 = new Array();
 myImages22.push("imagens/coreo7.png");
-myImages22.push("imagens/coreot3.png");
-myImages22.push("imagens/coreot4.png");
+myImages22.push("imagens/co3.png");
+myImages22.push("imagens/co6.png");
+myImages22.push("imagens/co7.png");
 
 function sgetRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -59,9 +62,9 @@ myImages3.push("imagens/34x.png");
 
 var myImages32 = new Array();
 myImages32.push("imagens/coreo9.png");
-myImages32.push("imagens/coreot5.png");
-myImages32.push("imagens/coreot6.png");
-myImages32.push("imagens/coreot7.png");
+myImages32.push("imagens/co8.png");
+myImages32.push("imagens/co9.png");
+myImages32.push("imagens/co10.png");
 
 
 function sgetRandomInt(min, max) {
