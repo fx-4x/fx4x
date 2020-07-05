@@ -1,0 +1,214 @@
+
+@media only screen and (max-width: 640px) {
+  body {
+    width: 100vw;
+    font-size: 18px;
+  }
+
+
+#head {
+  width: 100vw;
+  height: 44px;
+  backface-visibility: hidden;
+}
+
+#imgtitulo {
+  height: 44px;
+  width: 112px;
+}
+
+#fraseinicio {
+  height: 100vh;
+}
+
+.text1 {
+  width: 80%;
+  font-size: 28px;
+}
+
+#fullvid {
+  height: 300px;
+}
+
+
+
+#fundo {
+  display: none;
+}
+
+.bol2 {
+  transform: translate(144px, 480px);
+}
+
+
+.not3 {
+  width: 300px;
+  transform: translate(4px, -104px);
+}
+
+.not2 {
+  transform: translate(0px, 848px);
+}
+
+#obj {
+  margin-left: 10px;
+}
+
+#gifimg {
+  width: 300px;
+  height: 214px;
+}
+
+.gifX {
+  font-size: 124px;
+  transform: translate(0px, 120px);
+}
+
+.linkobj:active {
+  color: white;
+}
+
+
+
+#not1112 {
+  width: 80vw;
+}
+
+.not111 {
+  transform: translate(0px, 0px);
+  width: 80%;
+}
+
+.not112 {
+  transform: translate(-12px, 0px);
+  width: 80%;
+
+}
+
+
+#not2 {
+  width: 80vw;
+}
+
+
+.not4 {
+  transform: translate(0px, 0px);
+  width: 80%;
+}
+
+.not5 {
+  transform: translate(-12px, 60px);
+
+}
+
+.not6 {
+  transform: translate(102px, 160px);
+
+}
+
+
+
+#mg {
+  display: flex;
+  flex-direction: column;
+}
+
+#manual {
+  transform: translateX(0px);
+  margin-top: 200px;
+}
+
+
+#gab {
+  transform: translate(0px, 0px);
+}
+
+#gabdv {
+  left: 0;
+}
+
+#imgman {
+  width: 80vw;
+  height: 80%;
+}
+
+
+.not8 {
+  transform: translate(24px, -16px);
+}
+
+.not88 {
+  width: 80%;
+}
+
+.bol33 {
+  transform: translate(0px, 244px);
+}
+
+.bol5 {
+  transform: translate(-124px, 68px);
+}
+
+.num1{
+  transform: translate(24px, 616px);
+  width: 80%;
+  height: 80%;
+}
+
+
+
+
+.not11 {
+  transform: translate(4px, 98px);
+}
+
+
+#XFilme {
+  margin-bottom: -180px;
+}
+
+.esconderX {
+  font-size: 100px;
+  transform: translate(178px, -186px);
+}
+
+#img8meio {
+  width: 300px;
+  height: 159px;
+}
+
+#filme8 {
+  width: 80vw;
+}
+
+.titulo {
+  font-size: 32px;
+}
+
+.textmont {
+  font-size: 18px;
+}
+
+
+.bg-modal {
+  width: 100vw;
+  bottom: 0;
+  top: unset;
+}
+
+.video {
+  height: 60%;
+  
+}
+
+.bg-modal-info {
+  width: 100vw;
+  bottom: 0;
+  top: unset;
+}
+
+
+#editorial {
+  width: 80%;
+}
+}

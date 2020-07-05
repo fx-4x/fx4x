@@ -8,6 +8,7 @@
 
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="index_var.css">
+  <link rel="stylesheet" href="indexMQ.css">
 
   <!-- <script src="modal.js" type="text/javascript"></script> -->
 </head>
@@ -16,9 +17,9 @@
 
 
 
-  <header id="head">
+  <header id="head" data-position="fixed" >
     <button class="menu" onclick="w3_open()"></button>
-    <a href="index.html"><img src="imagens/titulo.png"></a>
+    <a href="index.html"><div id="imgtitulo"></div></a>
   </header>
 
   <div class="sidebar" style="display:none" id="mySidebar">
@@ -43,7 +44,7 @@
   </section>
 
   <section id="teaserCont">
-    <iframe id="fullvid" src="https://www.youtube.com/embed/DDDCLuJF9X0?rel=0" width="100%" height="800px" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe id="fullvid" src="https://www.youtube.com/embed/DDDCLuJF9X0?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </section>
 
   <div id="dfundo">
@@ -84,7 +85,7 @@
       <div id="obj">
         <a class="linkobj" href="indexobjeto.html">
           <div id="objimg">
-            <img src="imagens/Gif_convite.gif" width="524px">
+            <img id="gifimg" src="imagens/Gif_convite.gif" >
             <div class="gifX">
               <p>X</p>
             </div>
@@ -112,7 +113,7 @@
       <div id="mg">
         <div id="manual">
 
-          <div><a href="man.html"><img src="imagens/manpro.png"></a>
+          <div><a href="man.html"><img id="imgman" src="imagens/manpro.png"></a>
             <p id="tit1" class="titulo">Manual de Produção</p>
             <p class="textmont">Registo da construção da ficção.</p>
           </div>
@@ -123,7 +124,7 @@
         <div id="gab">
           <img src="imagens/not7.png" class="not8">
 
-          <div><a href="gab.html"><img src="imagens/gabfic.png"></a>
+          <div id="gabdv"><a href="gab.html"><img id="imgman" src="imagens/gabfic.png"></a>
 
             <p id="tit1" class="titulo">Gabinetes de Ficção</p>
             <p class="textmont">Momentos de reflexão dos artistas.</p>
@@ -157,7 +158,7 @@
             <p>X</p>
           </div>
           <a id="button" class="button">
-            <img width="648px" src="imagens/8emeio.png">
+            <img id="img8meio" src="imagens/8emeio.png">
           </a>
         </div>
         <div id="text3">
