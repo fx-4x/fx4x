@@ -90,7 +90,7 @@ body {
 #items {
   display: flex;
   flex-direction: column;
-  margin-top: 58px;
+  margin-top: 54px;
 }
 
 .item {

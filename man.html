@@ -25,7 +25,7 @@
     <div id="linhaItems">
       <img class="linhaM" src="imagens/linhamenuOrfeu.png">
       <div id="items">
-        <a href="index.html" class="item">Página Inicial</a>
+        <a href="index.html" class="item">f(x)=4<sup>x</sup></a>
         <a href="indexobjeto.html" class="item">4<sup>x</sup> > 0</a>
         <a href="gab.html" class="item">Gabinetes de Ficção</a>
         <a href="#" id="itemact">Manual de Ficção</a>
@@ -56,6 +56,28 @@
 
 <section id="fasciculos">
 <div id="fundoman"> <img src="imagens/fundoman.png"></div>
+<div id="top">
+  <div id="esq">
+    <a id="button1" class="button"><img src="manual/1capa.jpg" width="300px" height="424px"></a>
+  </div>
+  <div id="dto">
+    <a id="button2" class="button" data-modal="bg-modalCOMP"><img src="manual/2capa.jpg" width="300px" height="424px"></a>
+    
+  </div>
+</div>
+
+
+<div id="bot">
+  <div id="esq">
+    <a id="button3" class="button"><img src="manual/testefas3capa.jpg" width="300px" height="424px"></a>
+    
+  </div>
+  <div id="dto">
+    <a id="button4" class="button"><img src="manual/4capa.jpg" width="300px" height="424px"></a>
+    
+  </div>
+</div>
+
 </section>
 
 <footer>
@@ -110,6 +132,56 @@
 
 
 
+  <!-- PINTOR -->
+  <div class="bg-modal1">
+    <div class="modal-content">
+      <div class="close">X</div>
+     <embed id="manual" src="manual/1º Fasciculo_FINAL.pdf#toolbar=0">
+      
+    </div>
+  </div>
+
+
+
+  <!-- ESCRITORA -->
+  <div class="bg-modal2">
+    <div class="modal-content">
+      <div class="close2">X</div>
+      <embed id="manual" src="manual/2ºFascículo_FINAL.pdf#toolbar=0">
+      
+      
+    </div>
+  </div>
+
+  <!-- COMPOSITOR -->
+  <div class="bg-modal3">
+    <div class="modal-content">
+      <div class="close3">X</div>
+      <embed id="manual" src="manual/3º Fasciculo_FINAL.pdf#toolbar=0">
+      
+      
+    </div>
+  </div>
+
+
+
+
+  <!-- COREOGRAFA -->
+  <div class="bg-modal4">
+    <div class="modal-content">
+      <div class="close4">X</div>
+      <embed id="manual" src="manual/4ºFascículo_FINAL.pdf#toolbar=0">
+      
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
 
 <script>
   var prevScrollpos = window.pageYOffset;
@@ -125,6 +197,7 @@
 </script>
 
 <script src="menu.js" type="text/javascript"></script>
+<script src="man.js" type="text/javascript"></script>
 <script>document.getElementById('buttoninfo').addEventListener('click', function() {
   document.querySelector('.bg-modal-info').style.display = 'flex';
 });

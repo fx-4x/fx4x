@@ -37,6 +37,36 @@ function playg() {
 /* */
 
 
+
+$(document).ready(function(){
+  $("#comp2img").hover(function(){
+      xilo.play();
+      },
+  function(){
+    xilo.load();
+  });
+});
+
+$(document).ready(function(){
+  $("#comp5not2").hover(function(){
+      xilo.play();
+      },
+  function(){
+    xilo.load();
+  });
+});
+
+
+$(document).ready(function(){
+  $("#comp9not5").hover(function(){
+      xilo.play();
+      },
+  function(){
+    xilo.load();
+  });
+});
+
+
 $(document).ready(function(){
   $("#notacoes3").hover(function(){
       baixosom.play();
